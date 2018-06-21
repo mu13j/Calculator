@@ -17,4 +17,4 @@ $updateFilterBtn.addEventListener("click", filterData);
 
 function filterData() {
   // filterData calls data.updateFilter, which updates the data.filtered
-  $answer.textContent=Math.round(7.58420+0.00032050*$opp_pass_yds.value.trim()+0.00002440*$opp_rush_yds.value.trim()+0.00015229*$pass_yds.value.trim()+0.02434*$pts.value.trim()-0.02907*$pts_against.value.trim()+0.00021380*$rush_yds.value.trim()+0.01656*$takeaways.value.trim()-0.01869*$turnovers.value.trim())}
+  $answer.textContent=Math.round((7.58420+0.00032050*$opp_pass_yds.value.trim()+0.00002440*$opp_rush_yds.value.trim()+0.00015229*$pass_yds.value.trim()+0.02434*$pts.value.trim()-0.02907*$pts_against.value.trim()+0.00021380*$rush_yds.value.trim()+0.01656*$takeaways.value.trim()-0.01869*$turnovers.value.trim())*10)/10}
